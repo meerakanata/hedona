@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-mailchimp-form": "^1.0.2",
@@ -13,11 +14,13 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://meerakanata.github.io/",
   "scripts": {
     "start": "./node_modules/react-scripts/bin/react-scripts.js start",
     "build": "./node_modules/react-scripts/bin/react-scripts.js build",
     "test": "./node_modules/react-scripts/bin/react-scripts.js test",
-    "eject": "./node_modules/react-scripts/bin/react-scripts.js eject"
+    "eject": "./node_modules/react-scripts/bin/react-scripts.js eject",
+    "deploy": "./node_modules/gh-pages/bin/gh-pages.js gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
