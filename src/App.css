@@ -16,14 +16,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding: 0 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #092c0b;
   background: linear-gradient(301deg, #092c0b 0%, #150500 92%);
 }
@@ -32,10 +32,15 @@ body {
   position: absolute;
   top: 0;
   max-width: 1214px;
+  width: 80vw;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
+}
+
+.App #heroinePortrait {
+  display: none;
 }
 
 .App .main {
@@ -49,10 +54,27 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-top: 328px;
+  position: relative;
 }
 
-.App .main .streamerLinks {
+.App .main .bodyContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 330px;
+}
+
+.App .main .bodyContainer .streamers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,11 +88,33 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 46%;
+  width: 51%;
   padding-top: 13px;
+  z-index: 1000;
 }
 
-.App .main .streamerLinks .listenNow {
+.App .main .bodyContainer .streamers__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 1000;
+}
+
+.App .main .bodyContainer .streamers__links-icons:hover {
+  opacity: 0.7;
+}
+
+.App .main .bodyContainer .streamers__listenNow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,14 +123,16 @@ body {
   color: #E8F1F2;
   z-index: 500;
   font-size: 16px;
+  z-index: 1000;
 }
 
-.App .main .streamerLinks .streamerLinks__icon {
+.App .main .bodyContainer .streamers__links-icons {
   margin-top: 30px;
   width: 36px;
+  z-index: 1000;
 }
 
-.App .main .bodyCopy {
+.App .main .bodyContainer .bodyCopy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,9 +147,10 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-left: 8%;
+  z-index: 1000;
 }
 
-.App .main .bodyCopy .bio {
+.App .main .bodyContainer .bodyCopy__bio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,29 +166,91 @@ body {
           align-items: flex-start;
   font-family: 'Arimo', sans-serif;
   color: #E8F1F2;
-  font-size: 18px;
-  width: 41%;
-  line-height: 241%;
-  z-index: 300;
+  font-size: 1.125rem;
+  width: 36%;
+  line-height: 2.675rem;
+  z-index: 1000;
 }
 
-.App .main .bodyCopy .bio p {
+.App .main .bodyContainer .bodyCopy__bio p {
   padding-top: 20px;
 }
 
-.App .main .bodyCopy .signup {
+.App .main .bodyContainer .bodyCopy__signup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   color: #E8F1F2;
-  z-index: 500;
+  z-index: 1000;
   padding-top: 60px;
   font-size: 16px;
 }
 
-.App .main .bodyCopy .socials {
+.App .main .bodyContainer .bodyCopy__signup form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.App .main .bodyContainer .bodyCopy__signup form input {
+  border-style: none;
+  background-color: rgba(232, 241, 242, 0);
+  margin-top: 20px;
+  border-bottom: 1px solid rgba(232, 241, 242, 0.7);
+  background-clip: padding-box;
+  color: rgba(232, 241, 242, 0.7);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 4px;
+  padding-bottom: 13px;
+  padding-top: 13px;
+}
+
+.App .main .bodyContainer .bodyCopy__signup form input:focus-visible {
+  outline: 2px solid #E8F1F2;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+.App .main .bodyContainer .bodyCopy__signup form button {
+  margin-top: 20px;
+  background-color: rgba(232, 241, 242, 0);
+  border-radius: 20px;
+  height: 40px;
+  width: 140px;
+  border: 1px solid #FA9574;
+  color: #FA9574;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-transform: uppercase !important;
+}
+
+.App .main .bodyContainer .bodyCopy__signup form button:hover {
+  background-color: #FA9574;
+  color: #E8F1F2;
+}
+
+.App .main .bodyContainer .bodyCopy__signup form button:active {
+  background: #fa9574;
+  background: linear-gradient(343deg, #fa9574 0%, #ed4c67 46%);
+  color: #E8F1F2;
+  border: 1px solid #F14B54;
+}
+
+.App .main .bodyContainer .bodyCopy__socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,14 +265,380 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-top: 80px;
-  margin-bottom: 430px;
+  margin-bottom: 130px;
+  z-index: 1000;
 }
 
-.App .main .bodyCopy .socials__icon {
+.App .main .bodyContainer .bodyCopy__socials-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 24px;
   padding-right: 25px;
+  z-index: 1000;
+}
+
+.App .main .bodyContainer .bodyCopy__socials-icon:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 2351px) {
+  .App .main .bodyContainer .bodyCopy__bio {
+    width: 26%;
+  }
+  .App .main .bodyContainer .bodyCopy {
+    padding-left: 3%;
+  }
+}
+
+@media (max-width: 2350px) and (min-width: 2106px) {
+  .App .main .bodyContainer .bodyCopy__bio {
+    width: 27%;
+  }
+  .App .main .bodyContainer .bodyCopy {
+    padding-left: 4%;
+  }
+  .App .main .bodyContainer {
+    margin-top: 15%;
+  }
+}
+
+@media (max-width: 2105px) and (min-width: 1750px) {
+  .App .main .bodyContainer .bodyCopy__bio {
+    width: 30%;
+  }
+  .App .main .bodyContainer .bodyCopy {
+    padding-left: 5%;
+  }
+  .App .main .bodyContainer {
+    margin-top: 17%;
+  }
+}
+
+@media (max-width: 1749px) and (min-width: 1512px) {
+  .App .main .bodyContainer .bodyCopy__bio {
+    width: 33%;
+  }
+  .App .main .bodyContainer .bodyCopy {
+    padding-left: 6%;
+  }
+  .App .main .bodyContainer {
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 1511px) and (min-width: 1325px) {
+  .App .main .bodyContainer .bodyCopy {
+    padding-left: 6%;
+  }
+  .App .main .bodyContainer .streamers__links-icons {
+    margin-top: 28px;
+    width: 32px;
+  }
+  .App .main .bodyContainer {
+    margin-top: 22%;
+  }
+}
+
+@media (max-width: 1324px) and (min-width: 1124px) {
+  .App .main .bodyContainer .bodyCopy {
+    padding-left: 5%;
+  }
+  .App .main .bodyContainer .streamers {
+    width: 53%;
+  }
+  .App .main .bodyContainer .streamers__links-icons {
+    margin-top: 28px;
+    width: 32px;
+  }
+  .App .main .bodyContainer .bodyCopy__bio {
+    width: 38%;
+  }
+  .App .main .bodyContainer .bodyCopy__bio {
+    font-size: 1rem;
+  }
+  .App .main .bodyContainer {
+    margin-top: 22%;
+  }
+}
+
+@media (max-width: 1123px) and (min-width: 950px) {
+  .App .main .bodyContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 18%;
+  }
+  .App .main .bodyContainer .streamers {
+    width: 80%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .App .main .bodyContainer .streamers__links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+  }
+  .App .main .bodyContainer .streamers__links-icons {
+    margin-top: 20px;
+    width: 36px;
+    margin-right: 30px;
+  }
+  .App .main .bodyContainer .bodyCopy {
+    padding-left: 0;
+    margin-left: 10%;
+    margin-top: 6%;
+  }
+  .App .main .bodyContainer .bodyCopy__bio {
+    font-size: 1rem;
+    width: 47%;
+  }
+}
+
+@media (max-width: 949px) and (min-width: 700px) {
+  .App .main .bodyContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30%;
+  }
+  .App .main .bodyContainer .streamers {
+    width: 80%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .App .main .bodyContainer .streamers__links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+  }
+  .App .main .bodyContainer .streamers__links-icons {
+    margin-top: 20px;
+    width: 36px;
+    margin-right: 30px;
+  }
+  .App .main .bodyContainer .bodyCopy {
+    padding-left: 0;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+  .App .main .bodyContainer .bodyCopy__bio {
+    font-size: 1rem;
+    width: 88%;
+  }
+}
+
+@media (max-width: 699px) and (min-width: 451px) {
+  .App #heroine {
+    display: none;
+  }
+  .App #heroinePortrait {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    max-width: 699px;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  .App .main .bodyContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 100%;
+  }
+  .App .main .bodyContainer .streamers {
+    width: 88%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .App .main .bodyContainer .streamers__links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+  }
+  .App .main .bodyContainer .streamers__links-icons {
+    margin-top: 20px;
+    width: 36px;
+    margin-right: 30px;
+  }
+  .App .main .bodyContainer .bodyCopy {
+    padding-left: 0;
+    margin-left: 6%;
+    margin-top: 7%;
+  }
+  .App .main .bodyContainer .bodyCopy__bio {
+    font-size: 1rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 450px) and (min-width: 340px) {
+  .App #heroine {
+    display: none;
+  }
+  .App #heroinePortrait {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    max-width: 450px;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  .App .main .bodyContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 100%;
+  }
+  .App .main .bodyContainer .streamers {
+    width: 86%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .App .main .bodyContainer .streamers__links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+  }
+  .App .main .bodyContainer .streamers__links-icons {
+    margin-top: 20px;
+    width: 28px;
+    margin-right: 25px;
+  }
+  .App .main .bodyContainer .bodyCopy {
+    margin-top: 13%;
+    padding-left: 0;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  .App .main .bodyContainer .streamers__listenNow {
+    text-align: right;
+    width: 66%;
+  }
+  .App .main .bodyContainer .bodyCopy__bio {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 2.675rem;
+  }
+}
+
+@media (max-width: 339px) and (min-width: 0px) {
+  .App #heroine {
+    display: none;
+  }
+  .App #heroinePortrait {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    max-width: 450px;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  .App .main .bodyContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 100%;
+  }
+  .App .main .bodyContainer .streamers {
+    width: 86%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .App .main .bodyContainer .streamers__links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+  }
+  .App .main .bodyContainer .streamers__links-icons {
+    margin-top: 20px;
+    width: 24px;
+    margin-right: 40px;
+  }
+  .App .main .bodyContainer .bodyCopy {
+    margin-top: 13%;
+    padding-left: 0;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  .App .main .bodyContainer .streamers__listenNow {
+    text-align: right;
+    width: 66%;
+  }
+  .App .main .bodyContainer .bodyCopy__bio {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 2.675rem;
+  }
 }
 /*# sourceMappingURL=App.css.map */
