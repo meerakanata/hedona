@@ -140,16 +140,16 @@ body{
                         letter-spacing: 4px;
                         padding-bottom: 13px;
                         padding-top: 13px;
-                        
+                        border-radius: 0;
                     
                     }
-                    input:focus-visible {
-                        outline: 2px solid #E8F1F2;
-                        border-radius: 20px;
+                    input:focus-visible, input:focus-within, input:active {
+                        outline: 1px solid #E8F1F2;
+                        border-radius: 25px;
                         padding-left: 20px;
                     }
 
-                    button{
+                    button, button:visited{
                         margin-top: 20px;
                         background-color: rgba(232, 241, 242, 0);
                         border-radius: 20px;
@@ -162,6 +162,10 @@ body{
                         font-size: 16px;
                         letter-spacing: 4px;
                         text-transform: uppercase !important;
+                        outline: none;
+                    }
+                    button:focus, button:focus-within, button:focus-visible{
+                            outline: 1px solid #E8F1F2;
                     }
                     button:hover{
                         background-color: #FA9574;
@@ -172,6 +176,7 @@ body{
                         background: linear-gradient(343deg, rgba(250,149,116,1) 0%, rgba(237,76,103,1) 46%);
                         color: #E8F1F2;
                         border: 1px solid #F14B54;
+                        outline: none;
                     }
                 }
             }
@@ -481,6 +486,24 @@ and (min-width: 340px){
                     font-size: 1rem;
                     line-height: 2.675rem;
                 }
+                .bodyCopy__signup{
+                    form{
+                        button, button:hover{
+                            margin-top: 20px;
+                            background-color: rgba(232, 241, 242, 0);
+                            border-radius: 20px;
+                            height: 40px;
+                            width: 140px;
+                            border: 1px solid #FA9574;
+                            color: #FA9574;
+                            font-family: 'Raleway', sans-serif;
+                            font-weight: 600;
+                            font-size: 16px;
+                            letter-spacing: 4px;
+                            text-transform: uppercase !important;
+                        }
+                    }
+                }
 
 
             }
@@ -547,6 +570,24 @@ and (min-width: 0px){
                     width: 100%;
                     font-size: 1rem;
                     line-height: 2.675rem;
+                }
+                .bodyCopy__signup{
+                    form{
+                        button, button:hover{
+                            margin-top: 20px;
+                            background-color: rgba(232, 241, 242, 0);
+                            border-radius: 20px;
+                            height: 40px;
+                            width: 140px;
+                            border: 1px solid #FA9574;
+                            color: #FA9574;
+                            font-family: 'Raleway', sans-serif;
+                            font-weight: 600;
+                            font-size: 16px;
+                            letter-spacing: 4px;
+                            text-transform: uppercase !important;
+                        }
+                    }
                 }
 
 

@@ -241,15 +241,16 @@ body {
   letter-spacing: 4px;
   padding-bottom: 13px;
   padding-top: 13px;
+  border-radius: 0;
 }
 
-.App .main .bodyContainer .bodyCopy__signup form input:focus-visible {
-  outline: 2px solid #E8F1F2;
-  border-radius: 20px;
+.App .main .bodyContainer .bodyCopy__signup form input:focus-visible, .App .main .bodyContainer .bodyCopy__signup form input:focus-within, .App .main .bodyContainer .bodyCopy__signup form input:active {
+  outline: 1px solid #E8F1F2;
+  border-radius: 25px;
   padding-left: 20px;
 }
 
-.App .main .bodyContainer .bodyCopy__signup form button {
+.App .main .bodyContainer .bodyCopy__signup form button, .App .main .bodyContainer .bodyCopy__signup form button:visited {
   margin-top: 20px;
   background-color: rgba(232, 241, 242, 0);
   border-radius: 20px;
@@ -262,6 +263,11 @@ body {
   font-size: 16px;
   letter-spacing: 4px;
   text-transform: uppercase !important;
+  outline: none;
+}
+
+.App .main .bodyContainer .bodyCopy__signup form button:focus, .App .main .bodyContainer .bodyCopy__signup form button:focus-within, .App .main .bodyContainer .bodyCopy__signup form button:focus-visible {
+  outline: 1px solid #E8F1F2;
 }
 
 .App .main .bodyContainer .bodyCopy__signup form button:hover {
@@ -274,6 +280,7 @@ body {
   background: linear-gradient(343deg, #fa9574 0%, #ed4c67 46%);
   color: #E8F1F2;
   border: 1px solid #F14B54;
+  outline: none;
 }
 
 .App .main .bodyContainer .bodyCopy__socials {
@@ -618,6 +625,20 @@ body {
     font-size: 1rem;
     line-height: 2.675rem;
   }
+  .App .main .bodyContainer .bodyCopy__signup form button, .App .main .bodyContainer .bodyCopy__signup form button:hover {
+    margin-top: 20px;
+    background-color: rgba(232, 241, 242, 0);
+    border-radius: 20px;
+    height: 40px;
+    width: 140px;
+    border: 1px solid #FA9574;
+    color: #FA9574;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase !important;
+  }
 }
 
 @media (max-width: 339px) and (min-width: 0px) {
@@ -692,6 +713,20 @@ body {
     width: 100%;
     font-size: 1rem;
     line-height: 2.675rem;
+  }
+  .App .main .bodyContainer .bodyCopy__signup form button, .App .main .bodyContainer .bodyCopy__signup form button:hover {
+    margin-top: 20px;
+    background-color: rgba(232, 241, 242, 0);
+    border-radius: 20px;
+    height: 40px;
+    width: 140px;
+    border: 1px solid #FA9574;
+    color: #FA9574;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase !important;
   }
 }
 /*# sourceMappingURL=App.css.map */

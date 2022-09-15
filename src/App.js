@@ -12,12 +12,12 @@ function App() {
           <div className="streamers">
             <div className="streamers__listenNow">LISTEN NOW:</div>
             <div className="streamers__links">
-            <a href="https://soundcloud.com/user-112780443/tracks" target="_blank" rel="noreferrer"><img className="streamers__links-icons" src="./Images/Spotify_Icon.png" alt="Spotify" /></a>
-            <a href="https://soundcloud.com/user-112780443/tracks" target="_blank" rel="noreferrer"><img className="streamers__links-icons" src="./Images/Apple_Icon.png" alt="Apple Music" /></a>
-            <a href="https://soundcloud.com/user-112780443/tracks" target="_blank" rel="noreferrer"><img className="streamers__links-icons" src="./Images/YT_Icon.png" alt="YouTube Music" /></a>
-            <a href="https://soundcloud.com/user-112780443/tracks" target="_blank" rel="noreferrer"><img className="streamers__links-icons" src="./Images/Amazon_Icon.png" alt="Amazon Music" /></a>
-            <a href="https://soundcloud.com/user-112780443/tracks" target="_blank" rel="noreferrer"><img className="streamers__links-icons" src="./Images/Soundcloud_Icon.png" alt="Soundcloud" /></a>
-            <a href="https://soundcloud.com/user-112780443/tracks" target="_blank" rel="noreferrer"><img className="streamers__links-icons" src="./Images/Tidal_Icon.png" alt="Tidal" /></a>
+            <a href="https://open.spotify.com/album/2xiekc7RMG2fzofLQZTeyP" target="_blank" rel="noreferrer"><img className="streamers__links-icons" src="./Images/Spotify_Icon.png" alt="Spotify" /></a>
+            {/* <img className="streamers__links-icons" src="./Images/Apple_Icon.png" alt="Apple Music" /> */}
+            <a href="https://music.youtube.com/watch?v=NQoN1_Ny-b8" target="_blank" rel="noreferrer"><img className="streamers__links-icons" src="./Images/YT_Icon.png" alt="YouTube Music" /></a>
+            <a href="https://music.amazon.com/albums/B0B96R7F3Q" target="_blank" rel="noreferrer"><img className="streamers__links-icons" src="./Images/Amazon_Icon.png" alt="Amazon Music" /></a>
+            <a href="https://soundcloud.com/user-112780443/swimming-hedona" target="_blank" rel="noreferrer"><img className="streamers__links-icons" src="./Images/Soundcloud_Icon.png" alt="Soundcloud" /></a>
+            <a href="https://listen.tidal.com/album/242386424" target="_blank" rel="noreferrer"><img className="streamers__links-icons" src="./Images/Tidal_Icon.png" alt="Tidal" /></a>
             </div>
           </div>
           <div className="bodyCopy">
@@ -45,10 +45,10 @@ function App() {
                   }/>
             </div>
             <div className="bodyCopy__socials">
-              <a href="https://soundcloud.com/user-112780443/tracks" target="_blank" rel="noreferrer"><img className="bodyCopy__socials-icon" src="./Images/TikTok_Icon.png" alt="TikTok" /></a>
+              <a href="https://www.tiktok.com/@hedona.music" target="_blank" rel="noreferrer"><img className="bodyCopy__socials-icon" src="./Images/TikTok_Icon.png" alt="TikTok" /></a>
               <a href="https://www.instagram.com/hedona.music/" target="_blank" rel="noreferrer"><img className="bodyCopy__socials-icon" src="./Images/Instagram_Icon.png" alt="Instagram" /></a>
-              <a href="https://soundcloud.com/user-112780443/tracks" target="_blank" rel="noreferrer"><img className="bodyCopy__socials-icon" src="./Images/Facebook_Icon.png" alt="Facebook" /></a>
-              <a href="https://www.linkedin.com/company/hedona-music/about/" target="_blank" rel="noreferrer"><img className="bodyCopy__socials-icon" src="./Images/LinkedIn_Icon.png" alt="LinkedIn" /></a>
+              <a href="https://www.facebook.com/HEDONAmusic" target="_blank" rel="noreferrer"><img className="bodyCopy__socials-icon" src="./Images/Facebook_Icon.png" alt="Facebook" /></a>
+              <a href="https://www.linkedin.com/company/hedona-music/" target="_blank" rel="noreferrer"><img className="bodyCopy__socials-icon" src="./Images/LinkedIn_Icon.png" alt="LinkedIn" /></a>
             </div>
           </div>
         </div>
