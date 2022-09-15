@@ -43,6 +43,32 @@ body {
   display: none;
 }
 
+.App .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+}
+
+.App .copyright div {
+  font-family: 'Arimo', sans-serif;
+  color: #E8F1F2;
+  font-size: 0.75rem;
+  margin: 5px 0;
+  padding-right: 5px;
+}
+
+.App .copyright div a {
+  color: #E8F1F2;
+}
+
 .App .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -467,6 +493,15 @@ body {
     left: 0;
     right: 0;
   }
+  .App .copyright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .App .copyright div {
+    padding-right: 0;
+  }
   .App .main .bodyContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -526,6 +561,15 @@ body {
     margin-right: auto;
     left: 0;
     right: 0;
+  }
+  .App .copyright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .App .copyright div {
+    padding-right: 0;
   }
   .App .main .bodyContainer {
     -webkit-box-orient: vertical;
@@ -592,6 +636,15 @@ body {
     margin-right: auto;
     left: 0;
     right: 0;
+  }
+  .App .copyright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .App .copyright div {
+    padding-right: 0;
   }
   .App .main .bodyContainer {
     -webkit-box-orient: vertical;

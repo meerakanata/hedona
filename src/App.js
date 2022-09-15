@@ -53,7 +53,10 @@ function App() {
           </div>
         </div>
       </div>
-
+      <div className="copyright">
+          <div>Site design and development by {<a href="https://www.meerashah.ca" target="_blank" rel="noreferrer">Meera Shah</a>}. </div>
+          <div>Copyright © 2022 HEDONA</div>
+      </div>
     </div>
   );
 }

@@ -28,6 +28,23 @@ body{
     #heroinePortrait{
         display: none;
     }
+    .copyright{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 20px;
+        
+        div{
+            font-family: 'Arimo', sans-serif;
+            color: #E8F1F2;
+            font-size: 0.75rem;
+            margin: 5px 0;
+            padding-right: 5px;
+            a{
+                color: #E8F1F2;
+            }
+        }
+    }
     .main{
         display: flex;
         flex-direction: row;
@@ -179,7 +196,6 @@ body{
         }
 
     }
-
 
 }
 @media (min-width: 2351px){
@@ -363,6 +379,12 @@ and (min-width: 451px){
             left: 0;
             right: 0;
         }
+        .copyright{
+            flex-direction: column;
+            div{
+                padding-right: 0;
+            }
+        }
         .main{
             .bodyContainer{
                 flex-direction: column;
@@ -415,6 +437,12 @@ and (min-width: 340px){
             margin-right: auto;
             left: 0;
             right: 0;
+        }
+        .copyright{
+            flex-direction: column;
+            div{
+                padding-right: 0;
+            }
         }
         .main{
             .bodyContainer{
@@ -475,6 +503,12 @@ and (min-width: 0px){
             margin-right: auto;
             left: 0;
             right: 0;
+        }
+        .copyright{
+            flex-direction: column;
+            div{
+                padding-right: 0;
+            }
         }
         .main{
             .bodyContainer{
