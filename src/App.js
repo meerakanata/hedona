@@ -13,7 +13,7 @@ function App() {
             <div className="streamers__listenNow">LISTEN NOW:</div>
             <div className="streamers__links">
             <a href="https://open.spotify.com/album/2xiekc7RMG2fzofLQZTeyP" target="_blank" rel="noreferrer"><img className="streamers__links-icons" src="./Images/Spotify_Icon.png" alt="Spotify" /></a>
-            {/* <img className="streamers__links-icons" src="./Images/Apple_Icon.png" alt="Apple Music" /> */}
+            <a href="https://music.apple.com/album/id/1639053827" target="_blank" rel="noreferrer"><img className="streamers__links-icons" src="./Images/Apple_Icon.png" alt="Apple Music" /></a>
             <a href="https://music.youtube.com/watch?v=NQoN1_Ny-b8" target="_blank" rel="noreferrer"><img className="streamers__links-icons" src="./Images/YT_Icon.png" alt="YouTube Music" /></a>
             <a href="https://music.amazon.com/albums/B0B96R7F3Q" target="_blank" rel="noreferrer"><img className="streamers__links-icons" src="./Images/Amazon_Icon.png" alt="Amazon Music" /></a>
             <a href="https://soundcloud.com/user-112780443/swimming-hedona" target="_blank" rel="noreferrer"><img className="streamers__links-icons" src="./Images/Soundcloud_Icon.png" alt="Soundcloud" /></a>
