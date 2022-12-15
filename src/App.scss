@@ -64,6 +64,10 @@ body{
                 width: 51%;
                 padding-top: 13px;
                 z-index: 1000;
+                .spotifyEmbed{
+                    width: 100%;
+                    // height: 100px;
+                }
             }
             .streamers__links{
                 display: flex;
@@ -97,6 +101,10 @@ body{
                 align-items: flex-start;
                 padding-left: 8%;
                 z-index: 1000;
+                .spotifyEmbedWideView{
+                    width: 26%;
+                    // height: 100px;
+                }
             }
             .bodyCopy__bio{
                 display: flex;
@@ -205,21 +213,37 @@ body{
 }
 @media (min-width: 2351px){
 
+    .App .main .bodyContainer .streamers {
+        .spotifyEmbed{
+            display: none;
+        }
+    }
     .App .main .bodyContainer .bodyCopy__bio {
         width: 26%;
     }
     .App .main .bodyContainer .bodyCopy {
         padding-left: 3%;
+        .spotifyEmbedWideView{
+            width: 26%;
+        }
     }
 }
 @media (max-width: 2350px) 
 and (min-width: 2106px){
 
+    .App .main .bodyContainer .streamers {
+        .spotifyEmbed{
+            display: none;
+        }
+    }
     .App .main .bodyContainer .bodyCopy__bio {
-        width: 27%;
+        width: 26%;
     }
     .App .main .bodyContainer .bodyCopy {
         padding-left: 4%;
+        .spotifyEmbedWideView{
+            width: 26%;
+        }
     }
     .App .main .bodyContainer{
         margin-top: 15%;
@@ -228,11 +252,19 @@ and (min-width: 2106px){
 @media (max-width: 2105px) 
 and (min-width: 1750px){
 
+    .App .main .bodyContainer .streamers {
+        .spotifyEmbed{
+            display: none;
+        }
+    }
     .App .main .bodyContainer .bodyCopy__bio {
-        width: 30%;
+        width: 28%;
     }
     .App .main .bodyContainer .bodyCopy {
         padding-left: 5%;
+        .spotifyEmbedWideView{
+            width: 28%;
+        }
     }
     .App .main .bodyContainer{
         margin-top: 17%;
@@ -241,11 +273,19 @@ and (min-width: 1750px){
 @media (max-width: 1749px) 
 and (min-width: 1512px){
 
+    .App .main .bodyContainer .streamers {
+        .spotifyEmbed{
+            display: none;
+        }
+    }
     .App .main .bodyContainer .bodyCopy__bio {
         width: 33%;
     }
     .App .main .bodyContainer .bodyCopy {
         padding-left: 6%;
+        .spotifyEmbedWideView{
+            width: 33%;
+        }
     }
     .App .main .bodyContainer{
         margin-top: 20%;
@@ -254,8 +294,16 @@ and (min-width: 1512px){
 @media (max-width: 1511px) 
 and (min-width: 1325px){
 
+    .App .main .bodyContainer .streamers {
+        .spotifyEmbed{
+            display: none;
+        }
+    }
     .App .main .bodyContainer .bodyCopy {
         padding-left: 6%;
+        .spotifyEmbedWideView{
+            width: 36%;
+        }
     }
     .App .main .bodyContainer .streamers__links-icons {
         margin-top: 28px;
@@ -271,9 +319,15 @@ and (min-width: 1124px){
 
     .App .main .bodyContainer .bodyCopy {
         padding-left: 5%;
+        .spotifyEmbedWideView{
+            width: 36%;
+        }
     }
     .App .main .bodyContainer .streamers {
         width: 53%;
+        .spotifyEmbed{
+            display: none;
+        }
     }
     .App .main .bodyContainer .streamers__links-icons {
         margin-top: 28px;
@@ -301,6 +355,10 @@ and (min-width: 950px){
                     align-items: flex-start;
                     padding-left: 10%;
                     padding-right: 10%;
+                    .spotifyEmbed{
+                        width: 45%;
+                        margin-top: 18%;
+                    }
                 }
                 .streamers__links {
                     flex-direction: row;
@@ -317,6 +375,9 @@ and (min-width: 950px){
                     padding-left: 0;
                     margin-left: 10%;
                     margin-top: 6%;
+                    .spotifyEmbedWideView{
+                        display: none;
+                    }
                 }
                 .bodyCopy__bio {
                     font-size: 1rem;
@@ -340,6 +401,9 @@ and (min-width: 700px){
                     align-items: flex-start;
                     padding-left: 10%;
                     padding-right: 10%;
+                    .spotifyEmbed{
+                        width: 45%;
+                    }
                 }
                 .streamers__links {
                     flex-direction: row;
@@ -356,6 +420,9 @@ and (min-width: 700px){
                     padding-left: 0;
                     margin-left: 10%;
                     margin-top: 5%;
+                    .spotifyEmbedWideView{
+                        display: none;
+                    }
                 }
                 .bodyCopy__bio {
                     font-size: 1rem;
@@ -399,6 +466,9 @@ and (min-width: 451px){
                     align-items: flex-start;
                     padding-left: 6%;
                     padding-right: 6%;
+                    .spotifyEmbed{
+                        width: 80%;
+                    }
                 }
                 .streamers__links {
                     flex-direction: row;
@@ -415,6 +485,9 @@ and (min-width: 451px){
                     padding-left: 0;
                     margin-left: 6%;
                     margin-top: 7%;
+                    .spotifyEmbedWideView{
+                        display: none;
+                    }
                 }
                 .bodyCopy__bio {
                     font-size: 1rem;
@@ -458,6 +531,9 @@ and (min-width: 340px){
                     align-items: flex-start;
                     padding-left: 7%;
                     padding-right: 7%;
+                    .spotifyEmbed{
+                        width: 80%;
+                    }
                 }
                 .streamers__links {
                     flex-direction: row;
@@ -476,6 +552,9 @@ and (min-width: 340px){
                     padding-left: 0;
                     margin-left: 7%;
                     margin-right: 7%;
+                    .spotifyEmbedWideView{
+                        display: none;
+                    }
                 }
                 .streamers__listenNow {
                     text-align: right;
@@ -542,6 +621,9 @@ and (min-width: 0px){
                     align-items: flex-start;
                     padding-left: 7%;
                     padding-right: 7%;
+                    .spotifyEmbed{
+                        width: 80%;
+                    }
 
                 }
                 .streamers__links {
@@ -561,6 +643,9 @@ and (min-width: 0px){
                     padding-left: 0;
                     margin-left: 7%;
                     margin-right: 7%;
+                    .spotifyEmbedWideView{
+                        display: none;
+                    }
                 }
                 .streamers__listenNow {
                     text-align: right;

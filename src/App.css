@@ -119,6 +119,10 @@ body {
   z-index: 1000;
 }
 
+.App .main .bodyContainer .streamers .spotifyEmbed {
+  width: 100%;
+}
+
 .App .main .bodyContainer .streamers__links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,6 +178,10 @@ body {
           align-items: flex-start;
   padding-left: 8%;
   z-index: 1000;
+}
+
+.App .main .bodyContainer .bodyCopy .spotifyEmbedWideView {
+  width: 26%;
 }
 
 .App .main .bodyContainer .bodyCopy__bio {
@@ -316,20 +324,32 @@ body {
 }
 
 @media (min-width: 2351px) {
+  .App .main .bodyContainer .streamers .spotifyEmbed {
+    display: none;
+  }
   .App .main .bodyContainer .bodyCopy__bio {
     width: 26%;
   }
   .App .main .bodyContainer .bodyCopy {
     padding-left: 3%;
   }
+  .App .main .bodyContainer .bodyCopy .spotifyEmbedWideView {
+    width: 26%;
+  }
 }
 
 @media (max-width: 2350px) and (min-width: 2106px) {
+  .App .main .bodyContainer .streamers .spotifyEmbed {
+    display: none;
+  }
   .App .main .bodyContainer .bodyCopy__bio {
-    width: 27%;
+    width: 26%;
   }
   .App .main .bodyContainer .bodyCopy {
     padding-left: 4%;
+  }
+  .App .main .bodyContainer .bodyCopy .spotifyEmbedWideView {
+    width: 26%;
   }
   .App .main .bodyContainer {
     margin-top: 15%;
@@ -337,11 +357,17 @@ body {
 }
 
 @media (max-width: 2105px) and (min-width: 1750px) {
+  .App .main .bodyContainer .streamers .spotifyEmbed {
+    display: none;
+  }
   .App .main .bodyContainer .bodyCopy__bio {
-    width: 30%;
+    width: 28%;
   }
   .App .main .bodyContainer .bodyCopy {
     padding-left: 5%;
+  }
+  .App .main .bodyContainer .bodyCopy .spotifyEmbedWideView {
+    width: 28%;
   }
   .App .main .bodyContainer {
     margin-top: 17%;
@@ -349,11 +375,17 @@ body {
 }
 
 @media (max-width: 1749px) and (min-width: 1512px) {
+  .App .main .bodyContainer .streamers .spotifyEmbed {
+    display: none;
+  }
   .App .main .bodyContainer .bodyCopy__bio {
     width: 33%;
   }
   .App .main .bodyContainer .bodyCopy {
     padding-left: 6%;
+  }
+  .App .main .bodyContainer .bodyCopy .spotifyEmbedWideView {
+    width: 33%;
   }
   .App .main .bodyContainer {
     margin-top: 20%;
@@ -361,8 +393,14 @@ body {
 }
 
 @media (max-width: 1511px) and (min-width: 1325px) {
+  .App .main .bodyContainer .streamers .spotifyEmbed {
+    display: none;
+  }
   .App .main .bodyContainer .bodyCopy {
     padding-left: 6%;
+  }
+  .App .main .bodyContainer .bodyCopy .spotifyEmbedWideView {
+    width: 36%;
   }
   .App .main .bodyContainer .streamers__links-icons {
     margin-top: 28px;
@@ -377,8 +415,14 @@ body {
   .App .main .bodyContainer .bodyCopy {
     padding-left: 5%;
   }
+  .App .main .bodyContainer .bodyCopy .spotifyEmbedWideView {
+    width: 36%;
+  }
   .App .main .bodyContainer .streamers {
     width: 53%;
+  }
+  .App .main .bodyContainer .streamers .spotifyEmbed {
+    display: none;
   }
   .App .main .bodyContainer .streamers__links-icons {
     margin-top: 28px;
@@ -411,6 +455,10 @@ body {
     padding-left: 10%;
     padding-right: 10%;
   }
+  .App .main .bodyContainer .streamers .spotifyEmbed {
+    width: 45%;
+    margin-top: 18%;
+  }
   .App .main .bodyContainer .streamers__links {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -432,6 +480,9 @@ body {
     padding-left: 0;
     margin-left: 10%;
     margin-top: 6%;
+  }
+  .App .main .bodyContainer .bodyCopy .spotifyEmbedWideView {
+    display: none;
   }
   .App .main .bodyContainer .bodyCopy__bio {
     font-size: 1rem;
@@ -455,6 +506,9 @@ body {
     padding-left: 10%;
     padding-right: 10%;
   }
+  .App .main .bodyContainer .streamers .spotifyEmbed {
+    width: 45%;
+  }
   .App .main .bodyContainer .streamers__links {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -476,6 +530,9 @@ body {
     padding-left: 0;
     margin-left: 10%;
     margin-top: 5%;
+  }
+  .App .main .bodyContainer .bodyCopy .spotifyEmbedWideView {
+    display: none;
   }
   .App .main .bodyContainer .bodyCopy__bio {
     font-size: 1rem;
@@ -524,6 +581,9 @@ body {
     padding-left: 6%;
     padding-right: 6%;
   }
+  .App .main .bodyContainer .streamers .spotifyEmbed {
+    width: 80%;
+  }
   .App .main .bodyContainer .streamers__links {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -545,6 +605,9 @@ body {
     padding-left: 0;
     margin-left: 6%;
     margin-top: 7%;
+  }
+  .App .main .bodyContainer .bodyCopy .spotifyEmbedWideView {
+    display: none;
   }
   .App .main .bodyContainer .bodyCopy__bio {
     font-size: 1rem;
@@ -593,6 +656,9 @@ body {
     padding-left: 7%;
     padding-right: 7%;
   }
+  .App .main .bodyContainer .streamers .spotifyEmbed {
+    width: 80%;
+  }
   .App .main .bodyContainer .streamers__links {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -615,6 +681,9 @@ body {
     padding-left: 0;
     margin-left: 7%;
     margin-right: 7%;
+  }
+  .App .main .bodyContainer .bodyCopy .spotifyEmbedWideView {
+    display: none;
   }
   .App .main .bodyContainer .streamers__listenNow {
     text-align: right;
@@ -682,6 +751,9 @@ body {
     padding-left: 7%;
     padding-right: 7%;
   }
+  .App .main .bodyContainer .streamers .spotifyEmbed {
+    width: 80%;
+  }
   .App .main .bodyContainer .streamers__links {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -704,6 +776,9 @@ body {
     padding-left: 0;
     margin-left: 7%;
     margin-right: 7%;
+  }
+  .App .main .bodyContainer .bodyCopy .spotifyEmbedWideView {
+    display: none;
   }
   .App .main .bodyContainer .streamers__listenNow {
     text-align: right;

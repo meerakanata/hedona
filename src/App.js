@@ -1,6 +1,17 @@
 import React from "react";
+import SpotifyPlayer from 'react-spotify-player';
 import './App.css';
 import Mailchimp from "react-mailchimp-form";
+
+ 
+//size may also be a plain string using the presets 'large' or 'compact'
+const size = {
+  width: '100%',
+  height: 100,
+};
+const view = 'list'; // or 'coverart'
+const theme = 'black'; // or 'white'
+
 
 function App() {
   return (
@@ -9,7 +20,21 @@ function App() {
       <img id="heroine" src="./Images/Heroine.png" alt="Hedona portrait"/>
       <img id="heroinePortrait" src="./Images/Heroine_portrait.png" alt="Hedona portrait" />
         <div className="bodyContainer">
+          {/* <div className="embed">
+            <SpotifyPlayer
+              uri="spotify:track:6ww7BOQqaSwgx1dXxZQP6D"
+              size={size}
+              view={view}
+              theme={theme}
+            />
+          </div> */}
           <div className="streamers">
+            <div className="spotifyEmbed"><SpotifyPlayer
+              uri="spotify:track:6ww7BOQqaSwgx1dXxZQP6D"
+              size={size}
+              view={view}
+              theme={theme}
+            /></div>
             <div className="streamers__listenNow">LISTEN NOW:</div>
             <div className="streamers__links">
             <a href="https://open.spotify.com/album/2xiekc7RMG2fzofLQZTeyP" target="_blank" rel="noreferrer"><img className="streamers__links-icons" src="./Images/Spotify_Icon.png" alt="Spotify" /></a>
@@ -21,6 +46,13 @@ function App() {
             </div>
           </div>
           <div className="bodyCopy">
+            <div className="spotifyEmbedWideView">
+          <SpotifyPlayer
+              uri="spotify:track:6ww7BOQqaSwgx1dXxZQP6D"
+              size={size}
+              view={view}
+              theme={theme}
+            /></div>
             <div className="bodyCopy__bio">HEDONA crafts moody songs that question genres and push boundaries. Blending sounds and sonic textures that come from an eclectic mix of influences that include Björk, Kanye, YELLE, Sneaker Pimps, Portishead, Radiohead, and beyond, she’s successfully constructed a sound that’s distinctly HEDONA.
               <p>Her first single, SWIMMING, is available to stream now.</p>
             </div>
